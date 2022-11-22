@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Vadim Ivlev](https://up.htmlacademy.ru/adaptive/27/user/2218797).
-* Наставник: `Неизвестно`.
+* Наставник: [Станислав Михайлов](https://htmlacademy.ru/profile/id139638).
 
 ---
 
