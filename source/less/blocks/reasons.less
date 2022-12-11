@@ -1,0 +1,57 @@
+// .reasons {
+// }
+
+.reasons__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.reasons__description {
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.reasons__list {
+  position: relative;
+  .reset-ul-default-styles();
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    min-height: 57px;
+    background-image: url("../img/hero-triangle2.svg");
+    background-repeat: no-repeat;
+    // background-size: cover;
+  }
+}
+
+.reasons__item {
+  line-height: 26px;
+  text-transform: uppercase;
+  padding: 54px 18px 40px 18px;
+
+  &--town {
+    background-color: #81b3d2;
+    color: #fff;
+  }
+  &--bridge {
+    background-color: #81b3d2;
+    color: #fff;
+  }
+  &--square {
+    background-color: #eeeeee;
+    border: 1px solid #d6d6d6;
+  }
+  &--road {
+    background-color: #eeeeee;
+    border: 1px solid #d6d6d6;
+  }
+  &--tourists {
+    background-color: #eeeeee;
+  }
+}
