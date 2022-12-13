@@ -1,0 +1,296 @@
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.button {
+  padding: 18px;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: #81b3d2;
+  color: #ffffff;
+}
+.input {
+  font-family: "PT Sans", sans-serif;
+  padding: 16px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  background-color: #f2f2f2;
+  border: none;
+}
+.page {
+  height: 100vh;
+}
+.page__body {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  margin: 0;
+}
+.main-header {
+  height: 56px;
+}
+.main-navigation__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.main-navigation__item {
+  background-color: #81b3d2;
+}
+.main-navigation__link {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.hero-index {
+  position: relative;
+  background-image: url("../img/hero-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 90px 19px 85px 19px;
+}
+.hero-index::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  min-height: 57px;
+  background-image: url("../img/hero-triangle.svg");
+  background-repeat: no-repeat;
+}
+.reasons {
+  padding: 32px 18px 32px 18px;
+}
+.reasons__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+.reasons__description {
+  margin: 0;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+.reasons__list {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.reasons__list::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  min-height: 57px;
+  background-image: url("../img/hero-triangle2.svg");
+  background-repeat: no-repeat;
+}
+.reasons__item {
+  line-height: 26px;
+  text-transform: uppercase;
+  padding: 54px 18px 40px 18px;
+}
+.reasons__item--town {
+  background-color: #81b3d2;
+  color: #ffffff;
+}
+.reasons__item--bridge {
+  background-color: #81b3d2;
+  color: #ffffff;
+}
+.reasons__item--square {
+  background-color: #eeeeee;
+  border: 1px solid #d6d6d6;
+}
+.reasons__item--road {
+  background-color: #eeeeee;
+  border: 1px solid #d6d6d6;
+}
+.reasons__item--tourists {
+  background-color: #eeeeee;
+}
+.reasons__item-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+}
+.reasons__item-description {
+  margin: 0;
+  line-height: 21px;
+}
+.find-hotel {
+  text-transform: uppercase;
+  font-size: 21px;
+  line-height: 26px;
+  padding: 38px 18px 49px 18px;
+}
+.find-hotel__title {
+  margin: 0;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+}
+.find-hotel__description {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+.find-hotel__button {
+  background-color: #81b3d2;
+  border: none;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+}
+.main-footer {
+  padding: 28px 77px 23px 77px;
+}
+.hash-tag__title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+}
+.social__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.social__item {
+  padding: 12px;
+  background-color: #81b3d2;
+}
+.developer__text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+.feedback {
+  padding: 36px 20px 28px 20px;
+}
+.feedback__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+.feedback__description {
+  margin: 0;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+.feedback__form-fieldset {
+  border: none;
+}
+.feedback__form-fieldset-legend {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+.feedback__form-label {
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+.feedback__form-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.feedback__form-item {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+.feedback__form-required-text {
+  text-transform: uppercase;
+  color: rgba(51, 51, 51, 0.6);
+}
+.modal-container {
+  padding: 45px 42px 35px 42px;
+}
+.modal-container--closed {
+  display: none;
+}
+.modal-container__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+.modal-container__description {
+  margin: 0;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+.modal-container__button-close {
+  font-size: 18px;
+}
+.photo__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+.photo__description {
+  margin: 0;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+.photo__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.photo__image-name {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.photo__like-count {
+  font-weight: 700;
+}
+/*# sourceMappingURL=style.css.map */
