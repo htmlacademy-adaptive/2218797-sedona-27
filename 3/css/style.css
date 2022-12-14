@@ -54,6 +54,10 @@
   font-size: 14px;
   margin: 0;
 }
+.page_container {
+  margin: 0 auto;
+  width: 320px;
+}
 .main-header {
   height: 56px;
 }
@@ -91,9 +95,6 @@
   background-image: url("../img/hero-triangle.svg");
   background-repeat: no-repeat;
 }
-.reasons {
-  padding: 32px 18px 32px 18px;
-}
 .reasons__title {
   margin: 0;
   font-weight: 700;
@@ -125,7 +126,6 @@
 .reasons__item {
   line-height: 26px;
   text-transform: uppercase;
-  padding: 54px 18px 40px 18px;
 }
 .reasons__item--town {
   background-color: #81b3d2;
@@ -180,9 +180,6 @@
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
-}
-.main-footer {
-  padding: 28px 77px 23px 77px;
 }
 .hash-tag__title {
   text-transform: uppercase;
