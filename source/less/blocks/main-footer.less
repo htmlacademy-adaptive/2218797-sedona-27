@@ -1,2 +1,24 @@
-// .main-footer {
-// }
+.main-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  align-items: center;
+  padding-top: 36px;
+  padding-bottom: 36px;
+  background-color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-around;
+
+    .developer__image {
+      width: 27px;
+      height: 34px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}

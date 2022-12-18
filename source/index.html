@@ -9,15 +9,6 @@
   <body class="page__body">
     <div class="page_container">
       <header class="main-header">
-        <a class="main-header__logo">
-          <img
-            class="main-header__logo-image"
-            src="./img/logo.svg"
-            width="185"
-            height="96"
-            alt="Логотип Седоны."
-          />
-        </a>
         <nav class="main-navigation">
           <button class="main-navigation__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
@@ -48,21 +39,38 @@
             </svg> -->
           </button>
           <ul class="main-navigation__list">
-            <li class="main-navigation__item">
+            <li class="main-navigation__item main-navigation__item--logo">
+              <img
+                class="main-navigation__item-image"
+                src="./img/logo.svg"
+                width="185"
+                height="96"
+                alt="Логотип Седоны."
+              />
+            </li>
+            <li class="main-navigation__item main-navigation__item--main">
               <a
                 class="main-navigation__link main-navigation__link--current"
                 href="index.html"
                 >Главная</a
               >
             </li>
-            <li class="main-navigation__item">
-              <a class="main-navigation__link" href="">Фото и видео</a>
+            <li
+              class="main-navigation__item main-navigation__item--foto-and-video"
+            >
+              <a class="main-navigation__link" href="catalog.html"
+                >Фото и видео</a
+              >
             </li>
-            <li class="main-navigation__item">
-              <a class="main-navigation__link" href="">Форма отзывы</a>
+            <li class="main-navigation__item main-navigation__item--form">
+              <a class="main-navigation__link" href="form.html">Форма отзывы</a>
             </li>
-            <li class="main-navigation__item">
-              <a class="main-navigation__link" href="">HTML Academy</a>
+            <li
+              class="main-navigation__item main-navigation__item--html-academy"
+            >
+              <a class="main-navigation__link" href="https://htmlacademy.ru"
+                >HTML Academy</a
+              >
             </li>
           </ul>
         </nav>
@@ -81,12 +89,14 @@
         </div>
 
         <section class="reasons">
-          <h2 class="reasons__title">
-            Седона — небольшой городок в аризоне, заслуживающий большего!
-          </h2>
-          <p class="reasons__description">
-            Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
-          </p>
+          <div class="reasons_wrapper">
+            <h2 class="reasons__title">
+              Седона — небольшой городок в аризоне, заслуживающий большего!
+            </h2>
+            <p class="reasons__description">
+              Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+            </p>
+          </div>
           <ul class="reasons__list">
             <li class="reasons__item reasons__item--town">
               <div class="reasons__item-wrapper">
@@ -96,54 +106,60 @@
                 </p>
               </div>
               <img
-                class="reasons__item-image"
+                class="reasons__item-full-image"
                 src="img/sedona-town.jpg"
                 width="320"
                 height="260"
                 alt="Городок Седона."
               />
             </li>
-
-            <li class="reasons__item">
-              <img
-                class="reasons__item-image reasons__item-image--housing"
-                src="img/housing.svg"
-                alt="Домик."
-                width="40"
-                height="40"
-              />
-              <h3 class="reasons__item-title">Жильё</h3>
-              <p class="reasons__item-description">
-                Рекомендуем пожить в настоящем мотеле, все как в кино!
-              </p>
+            <li class="reasons__item reasons__item--infrastructure">
+              <div class="reasons__infrastructure">
+                <img
+                  class="reasons__item-image"
+                  src="img/housing.svg"
+                  alt="Домик."
+                  width="40"
+                  height="40"
+                />
+                <div class="reasons__item-wrapper-with-icon">
+                  <h3 class="reasons__item-title">Жильё</h3>
+                  <p class="reasons__item-description">
+                    Рекомендуем пожить в настоящем мотеле, все как в кино!
+                  </p>
+                </div>
+              </div>
+              <div class="reasons__infrastructure">
+                <img
+                  class="reasons__item-image"
+                  src="img/food.svg"
+                  alt="Гамбургер."
+                  width="40"
+                  height="40"
+                />
+                <div class="reasons__item-wrapper-with-icon">
+                  <h3 class="reasons__item-title">Еда</h3>
+                  <p class="reasons__item-description">
+                    Всегда заказывайте фирменный бургер, Вы не разочаруетесь!
+                  </p>
+                </div>
+              </div>
+              <div class="reasons__infrastructure">
+                <img
+                  class="reasons__item-image"
+                  src="img/souvenir.svg"
+                  alt="Подарок."
+                  width="40"
+                  height="40"
+                />
+                <div class="reasons__item-wrapper-with-icon">
+                  <h3 class="reasons__item-title">Сувениры</h3>
+                  <p class="reasons__item-description">
+                    Не только китайского, но и местного производства!
+                  </p>
+                </div>
+              </div>
             </li>
-            <li class="reasons__item">
-              <img
-                class="reasons__item-image reasons__item-image--food"
-                src="img/food.svg"
-                alt="Гамбургер."
-                width="40"
-                height="40"
-              />
-              <h3 class="reasons__item-title">Еда</h3>
-              <p class="reasons__item-description">
-                Всегда заказывайте фирменный бургер, Вы не разочаруетесь!
-              </p>
-            </li>
-            <li class="reasons__item">
-              <img
-                class="reasons__item-image reasons__item-image--souvenir"
-                src="img/souvenir.svg"
-                alt="Подарок."
-                width="40"
-                height="40"
-              />
-              <h3 class="reasons__item-title">Сувениры</h3>
-              <p class="reasons__item-description">
-                Не только китайского, но и местного производства!
-              </p>
-            </li>
-
             <li class="reasons__item reasons__item--bridge">
               <div class="reasons__item-wrapper">
                 <h3 class="reasons__item-title">Там есть мост дьявола</h3>
@@ -152,7 +168,7 @@
                 </p>
               </div>
               <img
-                class="reasons__item-image"
+                class="reasons__item-full-image"
                 src="img/devil-bridge.jpg"
                 width="320"
                 height="260"
@@ -181,14 +197,16 @@
           </ul>
         </section>
         <section class="find-hotel">
-          <h2 class="find-hotel__title">Заинтересовались?</h2>
-          <p class="find-hotel__description">
-            Укажите предполагаемые даты поездки, и мы покажем вам лучшие
-            предложения гостиниц в седоне
-          </p>
-          <button class="find-hotel__button button" type="button">
-            Найти гостиницу
-          </button>
+          <div class="find-hotel__wrapper">
+            <h2 class="find-hotel__title">Заинтересовались?</h2>
+            <p class="find-hotel__description">
+              Укажите предполагаемые даты поездки, и мы покажем вам лучшие
+              предложения гостиниц в седоне
+            </p>
+            <button class="find-hotel__button button" type="button">
+              Найти гостиницу
+            </button>
+          </div>
         </section>
         <section class="map">
           <h2 class="visually-hidden">Карта аризоны</h2>
@@ -284,16 +302,14 @@
           </ul>
         </section>
         <section class="developer">
-          <div class="developer-wrapper">
-            <h2 class="developer__text">Разработано</h2>
-            <img
-              class="developer__image"
-              src="./img/htmlacademy.svg"
-              width="27"
-              height="34"
-              alt="Логотип HTMLAcademy"
-            />
-          </div>
+          <h2 class="developer__text">Разработано</h2>
+          <img
+            class="developer__image"
+            src="./img/htmlacademy.svg"
+            width="27"
+            height="34"
+            alt="Логотип HTMLAcademy"
+          />
         </section>
       </footer>
     </div>
