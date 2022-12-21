@@ -1,11 +1,31 @@
 .find-hotel {
   text-transform: uppercase;
-  font-size: 21px;
-  line-height: 26px;
+  text-align: center;
+  // font-size: 21px;
+  // line-height: 26px;
   padding: 38px 18px 49px 18px;
+  background-color: #ffffff;
+  // width: 272px;
+}
+
+.find-hotel__wrapper {
+  width: 272px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+
+  @media (min-width: @tablet-width) {
+    width: 458px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 458px;
+  }
 }
 
 .find-hotel__title {
+  text-transform: uppercase;
   margin: 0;
   font-size: 21px;
   font-weight: 700;
@@ -13,6 +33,7 @@
 }
 
 .find-hotel__description {
+  text-transform: uppercase;
   margin: 0;
   font-size: 14px;
   font-weight: 400;
@@ -20,6 +41,7 @@
 }
 
 .find-hotel__button {
+  text-transform: uppercase;
   background-color: #81b3d2;
   border: none;
   color: #ffffff;

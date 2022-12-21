@@ -4,21 +4,31 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  text-align: center;
   padding: 90px 19px 85px 19px;
-
-  // height: 631px;
 
   &::before {
     content: "";
     position: absolute;
+    margin-left: auto;
+    margin-right: auto;
     left: 0;
     right: 0;
     bottom: 0;
     min-height: 57px;
     background-image: url("../img/hero-triangle.svg");
     background-repeat: no-repeat;
-    // background-size: cover;
+    background-position: center;
+    background-size: cover;
   }
 }
-// .hero-index__image {
-// }
+
+.hero-index__image {
+  width: 282px;
+  height: 214px;
+
+  // @media (min-width: @tablet-width) {
+  //   width: 461px;
+  //   height: 350px;
+  // }
+}
