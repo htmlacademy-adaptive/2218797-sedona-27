@@ -3,3 +3,22 @@
   margin: 0;
   list-style-type: none;
 }
+
+.block-numeration() {
+  counter-increment: index;
+  content: "— №" counters(index, ".", decimal) " —";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -40px;
+}
+
+.block-features() {
+  background-color: #eeeeee;
+  text-align: center;
+  // padding-top: 24px;
+  // padding-left: 33px;
+  // padding-right: 33px;
+  box-sizing: border-box;
+  min-height: 167px;
+}

@@ -1,5 +1,20 @@
-// .map {
-// }
+.map {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background-color: #81b3d2;
+    border: 5px solid #ffffff;
+    box-sizing: content-box;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+}
 
 .map__image {
   object-fit: cover;

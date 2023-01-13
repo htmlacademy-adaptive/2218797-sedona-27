@@ -1,25 +1,109 @@
 .modal-container {
-  padding: 45px 42px 35px 42px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 2;
 
   &--closed {
     display: none;
   }
+
+  &__wrapper {
+    margin: auto;
+
+    @media (min-width: @tablet-width) {
+      width: 640px;
+
+      .modal-body {
+        width: auto;
+        padding-top: 53px;
+        padding-bottom: 54px;
+      }
+    }
+  }
 }
 
-.modal-container__title {
-  margin: 0;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  text-transform: uppercase;
+.modal-body {
+  display: grid;
+  gap: 28px;
+  width: 320px;
+  margin: auto;
+  margin-top: 116px;
+  padding-top: 45px;
+  padding-right: 42px;
+  padding-left: 42px;
+  padding-bottom: 35px;
+  background-color: #ffffff;
+  text-align: center;
+  box-sizing: border-box;
+
+  &__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: uppercase;
+
+    @media (max-width: @mobile-width-only) {
+      br {
+        display: none;
+      }
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-top: 283px;
+    width: 400px;
+
+    &__title {
+      font-size: 30px;
+      line-height: 40px;
+      gap: 34px;
+    }
+  }
+
+  &--success {
+    margin: auto;
+  }
+
+  &__description {
+    margin: 0;
+    line-height: 21px;
+    text-transform: uppercase;
+  }
+
+  &__button-close {
+    font-size: 18px;
+    height: 58px;
+    width: 76%;
+    margin: 0 auto;
+
+    @media (min-width: @tablet-width) {
+      width: 272px;
+    }
+  }
 }
 
-.modal-container__description {
-  margin: 0;
-  line-height: 21px;
-  text-transform: uppercase;
-}
+.modal-footer {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
 
-.modal-container__button-close {
-  font-size: 18px;
+  &__button-close {
+    font-size: 18px;
+    height: 58px;
+    width: 280px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 44px 91px;
+
+    &__button-close {
+      width: 458px;
+    }
+  }
 }
