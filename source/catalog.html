@@ -9,60 +9,38 @@
   <body class="page__body">
     <div class="page_container">
       <header class="main-header">
-        <nav class="main-navigation">
+        <a class="main-header__logo-link" href="/">
+          <img
+            class="main-header__logo-image"
+            src="./img/logo.svg"
+            width="185"
+            height="96"
+            alt="Логотип Седоны."
+          />
+        </a>
+        <nav
+          class="main-navigation main-navigation--closed main-navigation--nojs"
+        >
           <button class="main-navigation__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
-            <svg
-              class="main-navigation__icon"
-              width="23"
-              height="22"
-              viewBox="0 0 23 22"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M22.9 0H0V4H22.9V0Z" fill="#81B3D2" />
-              <path d="M22.9 9H0V13H22.9V9Z" fill="#81B3D2" />
-              <path d="M22.9 18H0V22H22.9V18Z" fill="#81B3D2" />
-            </svg>
-            <!-- <svg
-              class="main-navigation__icon main-navigation__icon--hidden"
-              width="23"
-              height="23"
-              viewBox="0 0 23 23"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M22.2 2.8L19.4 0L11.1 8.3L2.8 0L0 2.8L8.3 11.1L0 19.4L2.8 22.2L11.1 13.9L19.4 22.2L22.2 19.4L13.9 11.1L22.2 2.8Z"
-                fill="white"
-              />
-            </svg> -->
           </button>
           <ul class="main-navigation__list">
-            <li class="main-navigation__item main-navigation__item--logo">
-              <img
-                class="main-navigation__item-image"
-                src="./img/logo.svg"
-                width="185"
-                height="96"
-                alt="Логотип Седоны."
-              />
-            </li>
             <li class="main-navigation__item main-navigation__item--main">
-              <a
-                class="main-navigation__link main-navigation__link--current"
-                href="index.html"
-                >Главная</a
-              >
+              <a class="main-navigation__link" href="index.html">Главная</a>
             </li>
             <li
               class="main-navigation__item main-navigation__item--foto-and-video"
             >
-              <a class="main-navigation__link" href="catalog.html"
+              <a
+                class="main-navigation__link main-navigation__link--current"
+                href="catalog.html"
                 >Фото и видео</a
               >
             </li>
-            <li class="main-navigation__item main-navigation__item--form">
+            <li
+              class="main-navigation__item main-navigation__item--form"
+              disabled
+            >
               <a class="main-navigation__link" href="form.html">Форма отзывы</a>
             </li>
             <li
@@ -114,13 +92,10 @@
                     width="23"
                     height="21"
                     viewBox="0 0 23 21"
-                    fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      opacity="0.3"
                       d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"
-                      fill="black"
                     />
                   </svg>
 
@@ -136,7 +111,7 @@
               />
               <div class="photo__desc-wrapper">
                 <div class="photo__author-wrapper">
-                  <h3>Местная растительность</h3>
+                  <h3 class="photo__image-name">Местная растительность</h3>
                   <p class="photo__author">Автор фото: Сергей</p>
                 </div>
                 <div class="photo__like-wrapper">
@@ -145,13 +120,10 @@
                     width="23"
                     height="21"
                     viewBox="0 0 23 21"
-                    fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      opacity="0.3"
                       d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"
-                      fill="black"
                     />
                   </svg>
                   <span class="photo__like-count">143</span>
@@ -167,7 +139,7 @@
 
               <div class="photo__desc-wrapper">
                 <div class="photo__author-wrapper">
-                  <h3>Дорога на север</h3>
+                  <h3 class="photo__image-name">Дорога на север</h3>
                   <p class="photo__author">Автор фото: Петр</p>
                 </div>
                 <div class="photo__like-wrapper">
@@ -176,13 +148,10 @@
                     width="23"
                     height="21"
                     viewBox="0 0 23 21"
-                    fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      opacity="0.3"
                       d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"
-                      fill="black"
                     />
                   </svg>
                   <span class="photo__like-count">96</span>
@@ -198,7 +167,7 @@
 
               <div class="photo__desc-wrapper">
                 <div class="photo__author-wrapper">
-                  <h3>Мост дьявола</h3>
+                  <h3 class="photo__image-name">Мост дьявола</h3>
                   <p class="photo__author">Автор фото: Антон</p>
                 </div>
                 <div class="photo__like-wrapper">
@@ -207,13 +176,10 @@
                     width="23"
                     height="21"
                     viewBox="0 0 23 21"
-                    fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      opacity="0.3"
                       d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"
-                      fill="black"
                     />
                   </svg>
                   <span class="photo__like-count">254</span>
@@ -231,11 +197,13 @@
               подорожали в очередной раз!
             </p>
           </div>
-          <img
-            src="./img/video-mobile.png"
-            class="video_image"
-            alt="видеопрезентация"
-          />
+          <div class="video__image-wrapper">
+            <img
+              src="./img/video-mobile.png"
+              class="video__image"
+              alt="видеопрезентация"
+            />
+          </div>
         </section>
       </main>
       <footer class="main-footer">
@@ -332,5 +300,7 @@
         </section>
       </footer>
     </div>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
