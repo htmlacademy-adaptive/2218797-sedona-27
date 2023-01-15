@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="img/favicons/apple.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
   </head>
   <body class="page__body">
     <div class="page_container">
@@ -61,7 +65,7 @@
           <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
           <img
             class="hero-index__image"
-            src="./img/welcome.png"
+            src="./img/hero-index-text.svg"
             width="282"
             height="214"
             alt="Welcome to the gorgeous. Sedona. Because the Grand Canyon sucks!"
@@ -69,7 +73,7 @@
         </div>
 
         <section class="reasons">
-          <div class="reasons_wrapper">
+          <div class="reasons__wrapper">
             <h2 class="reasons__title">
               Седона — небольшой городок в аризоне, заслуживающий большего!
             </h2>
@@ -87,13 +91,32 @@
                   Седона не аттракцион для туристов, там течет своя жизнь
                 </p>
               </div>
-              <img
-                class="reasons__item-full-image"
-                src="img/sedona-town.jpg"
-                width="320"
-                height="260"
-                alt="Городок Седона."
-              />
+              <div class="reasons__item-image-wrapper">
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      img/photo-city-desktop.jpg    1x,
+                      img/photo-city-desktop@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/photo-city-tablet.jpg 1x,
+                      img/photo-city-tablet.jpg 2x
+                    "
+                  />
+                  <img
+                    class="reasons__item-full-image"
+                    src="img/photo-city-mobile.jpg"
+                    srcset="img/photo-city-mobile@2x.jpg 2x"
+                    width="320"
+                    height="260"
+                    alt="Городок Седона."
+                  />
+                </picture>
+              </div>
             </li>
             <li class="reasons__item reasons__item--infrastructure">
               <div class="reasons__infrastructure">
@@ -167,13 +190,33 @@
                   Да, по нему можно пройти! Если вы осмелитесь, конечно
                 </p>
               </div>
-              <img
-                class="reasons__item-full-image"
-                src="img/devil-bridge.jpg"
-                width="320"
-                height="260"
-                alt="Мост дьявола."
-              />
+
+              <div class="reasons__item-image-wrapper">
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      img/photo-devil-bridge-desktop.jpg    1x,
+                      img/photo-devil-bridge-desktop@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/photo-devil-bridge-tablet.jpg 1x,
+                      img/photo-devil-bridge-tablet.jpg 2x
+                    "
+                  />
+                  <img
+                    class="reasons__item-full-image"
+                    src="img/photo-devil-bridge-mobile.jpg"
+                    srcset="img/photo-devil-bridge-mobile@2x.jpg 2x"
+                    width="320"
+                    height="260"
+                    alt="Городок Седона."
+                  />
+                </picture>
+              </div>
             </li>
 
             <li class="reasons__item reasons__item--square">
@@ -222,13 +265,24 @@
         </section>
         <section class="map">
           <h2 class="visually-hidden">Карта аризоны</h2>
-          <img
-            class="map__image"
-            src="./img/map.png"
-            width="320"
-            height="350"
-            alt="карта аризоны."
-          />
+          <picture>
+            <source
+              media="(min-width: 1200px)"
+              srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="img/map-tablet.jpg 1x, img/map-tablet.jpg 2x"
+            />
+            <img
+              class="map__image"
+              src="img/map-mobile.jpg"
+              srcset="img/map-mobile@2x.jpg 2x"
+              width="320"
+              height="350"
+              alt="Карта Аризоны."
+            />
+          </picture>
         </section>
       </main>
       <footer class="main-footer">

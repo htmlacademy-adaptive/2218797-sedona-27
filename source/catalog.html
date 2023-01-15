@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="img/favicons/apple.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
   </head>
   <body class="page__body">
     <div class="page_container">
@@ -55,7 +59,7 @@
       </header>
 
       <main class="main-container">
-        <div class="hero-index">
+        <div class="hero-index hero-index--positioned">
           <h1 class="visually-hidden">Каталог</h1>
           <img
             class="hero-index__image"
@@ -76,11 +80,24 @@
           </div>
           <ul class="photo__list">
             <li class="photo__item photo__item--main1">
-              <img
-                class="photo__image"
-                src="./img/photo-1-mobile.jpg"
-                alt="Неродные просторы."
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="img/road-desktop.jpg 1x, img/road-desktop@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="img/road-tablet.jpg 1x, img/road-tablet.jpg 2x"
+                />
+                <img
+                  class="photo__image"
+                  src="img/road-mobile.jpg"
+                  srcset="img/road-mobile@2x.jpg 2x"
+                  width="280"
+                  height="280"
+                  alt="Неродные просторы."
+                />
+              </picture>
               <div class="photo__desc-wrapper">
                 <div class="photo__author-wrapper">
                   <h3 class="photo__image-name">Неродные просторы</h3>
@@ -104,11 +121,24 @@
               </div>
             </li>
             <li class="photo__item photo__item--main2">
-              <img
-                class="photo__image"
-                src="./img/photo-2-mobile.jpg"
-                alt="Местная растительность."
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="img/plant-desktop.jpg 1x, img/plant-desktop@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="img/plant-tablet.jpg 1x, img/plant-tablet.jpg 2x"
+                />
+                <img
+                  class="photo__image"
+                  src="img/plant-mobile.jpg"
+                  srcset="img/plant-mobile@2x.jpg 2x"
+                  width="280"
+                  height="280"
+                  alt="Местная растительность."
+                />
+              </picture>
               <div class="photo__desc-wrapper">
                 <div class="photo__author-wrapper">
                   <h3 class="photo__image-name">Местная растительность</h3>
@@ -131,11 +161,24 @@
               </div>
             </li>
             <li class="photo__item photo__item--main3">
-              <img
-                class="photo__image"
-                src="./img/photo-3-mobile.jpg"
-                alt="Дорога на север."
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="img/wood-desktop.jpg 1x, img/wood-desktop@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="img/wood-tablet.jpg 1x, img/wood-tablet.jpg 2x"
+                />
+                <img
+                  class="photo__image"
+                  src="img/wood-mobile.jpg"
+                  srcset="img/wood-mobile@2x.jpg 2x"
+                  width="280"
+                  height="280"
+                  alt="Дорога на север."
+                />
+              </picture>
 
               <div class="photo__desc-wrapper">
                 <div class="photo__author-wrapper">
@@ -159,11 +202,24 @@
               </div>
             </li>
             <li class="photo__item photo__item--main4">
-              <img
-                class="photo__image"
-                src="./img/photo-4-mobile.jpg"
-                alt="Мост дьявола."
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="img/devil-desktop.jpg 1x, img/devil-desktop@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="img/devil-tablet.jpg 1x, img/devil-tablet.jpg 2x"
+                />
+                <img
+                  class="photo__image"
+                  src="img/devil-mobile.jpg"
+                  srcset="img/devil-mobile@2x.jpg 2x"
+                  width="280"
+                  height="280"
+                  alt="Мост дьявола."
+                />
+              </picture>
 
               <div class="photo__desc-wrapper">
                 <div class="photo__author-wrapper">
@@ -198,11 +254,24 @@
             </p>
           </div>
           <div class="video__image-wrapper">
-            <img
-              src="./img/video-mobile.png"
-              class="video__image"
-              alt="видеопрезентация"
-            />
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="img/video-tablet.jpg 1x, img/video-tablet.jpg 2x"
+              />
+              <img
+                class="video__image"
+                src="img/video-mobile.jpg"
+                srcset="img/video-mobile@2x.jpg 2x"
+                width="280"
+                height="280"
+                alt="Видеопрезентация."
+              />
+            </picture>
           </div>
         </section>
       </main>
