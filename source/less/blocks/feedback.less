@@ -257,9 +257,10 @@
     right: 1px;
     bottom: 1px;
     background-color: #e6e6e6;
-    background-image: url("../../img/phone.svg");
+    background-image: url("../../img/icons/sprite.svg#phone-icon");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 18px 18px;
   }
 
   &--mail::before {
@@ -270,9 +271,10 @@
     right: 1px;
     bottom: 1px;
     background-color: #e6e6e6;
-    background-image: url("../../img/mail.svg");
+    background-image: url("../../img/icons/sprite.svg#mail-icon");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 16px 12px;
   }
 
   &--radio {
@@ -348,7 +350,9 @@
   position: absolute;
   width: 22px;
   height: 16px;
-  background-image: url("../../img/tick.svg");
+  background-image: url("../../img/icons/sprite.svg#tick-icon");
+  background-repeat: no-repeat;
+  background-size: 22px 16px;
   top: 15px;
   left: 13px;
 }
@@ -368,7 +372,6 @@
 
   @media (min-width: @tablet-width) {
     grid-template-columns: 1fr 1fr;
-    // justify-content: space-between;
   }
 
   @media (min-width: @desktop-width) {
