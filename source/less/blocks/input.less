@@ -1,6 +1,5 @@
 .input {
   font-family: "PT Sans", sans-serif;
-  padding: 16px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -9,5 +8,22 @@
   border: none;
   box-sizing: border-box;
   width: 100%;
-  padding-right: 60px;
+  padding: 17px 60px 16px 14px;
+
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:active {
+    background-color: #ffffff;
+  }
+
+  &:focus {
+    outline: 4px solid #e5e5e5;
+    background-color: #ffffff;
+  }
 }

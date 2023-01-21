@@ -1,27 +1,41 @@
 .main-footer {
   display: flex;
   flex-direction: column;
-  gap: 35px;
+  gap: 30px;
   align-items: center;
   padding-top: 36px;
   padding-bottom: 36px;
   background-color: #ffffff;
 
+  &--catalog {
+    padding-top: 28px;
+  }
+
   @media (min-width: @tablet-width) {
     padding-left: 60px;
-    padding-right: 60px;
+    padding-right: 76px;
+    padding-top: 32px;
     flex-direction: row;
     justify-content: space-between;
+
+    &--catalog {
+      padding-top: 74px;
+      padding-right: 60px;
+    }
 
     .developer__image {
       width: 27px;
       height: 34px;
     }
+
+    &--form {
+      padding-right: 60px;
+    }
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 160px;
-    padding-right: 160px;
+    padding-left: 120px;
+    padding-right: 135px;
     flex-direction: row;
     justify-content: space-between;
   }

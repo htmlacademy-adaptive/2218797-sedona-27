@@ -140,12 +140,20 @@
     box-shadow: none;
     border: none;
 
-    &:hover,
+    &:hover {
+      background-color: #ffffff;
+
+      .main-navigation__link {
+        color: #81b3d2;
+      }
+    }
+
     &:active {
       background-color: #ffffff;
 
       .main-navigation__link {
-        color: #766357;
+        color: #000000;
+        opacity: 0.3;
       }
     }
 
@@ -184,6 +192,10 @@
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
+
+  &:hover {
+    color: #81b3d2;
+  }
 
   @media (min-width: @tablet-width) {
     display: block;
