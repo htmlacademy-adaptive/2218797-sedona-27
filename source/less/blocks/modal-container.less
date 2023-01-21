@@ -16,7 +16,11 @@
     margin: auto;
 
     @media (min-width: @tablet-width) {
+      position: absolute;
       width: 640px;
+      top: 19%;
+      transform: translateX(-50%);
+      left: 50%;
 
       .modal-body {
         width: auto;
@@ -84,6 +88,7 @@
 
     @media (min-width: @tablet-width) {
       width: 272px;
+      font-size: 21px;
     }
   }
 }
@@ -94,7 +99,7 @@
   text-align: center;
 
   &__button-close {
-    font-size: 18px;
+    font-size: 16px;
     height: 58px;
     width: 280px;
   }
@@ -104,6 +109,7 @@
 
     &__button-close {
       width: 458px;
+      font-size: 21px;
     }
   }
 }

@@ -5,6 +5,11 @@
     padding-left: 60px;
     padding-right: 60px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .photo__wrapper {
@@ -12,25 +17,38 @@
   padding-left: 20px;
   padding-right: 20px;
   display: grid;
-  gap: 35px;
+  gap: 29px;
   padding-top: 36px;
-  padding-bottom: 25px;
-  margin-bottom: 25px;
+  padding-bottom: 34px;
+  margin-bottom: 21px;
   text-align: center;
   order: 1;
   border-bottom: 1px solid #e5e5e5;
+
+  @media (max-width: @mobile-width-only) {
+    br {
+      display: none;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     padding-left: 0;
     padding-right: 0;
     border-bottom: none;
     padding-bottom: 45px;
+    padding-top: 67px;
+    margin-bottom: 38px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 101px;
+    margin-bottom: 44px;
   }
 }
 
 .photo__desc-wrapper {
   display: flex;
-  padding-top: 15px;
+  padding-top: 14px;
   justify-content: space-between;
   flex-direction: column;
   gap: 11px;
@@ -38,12 +56,12 @@
   @media (min-width: @tablet-width) {
     background-color: #f2f2f2;
     flex-direction: row;
-    padding-bottom: 15px;
+    padding-bottom: 19px;
     padding-left: 20px;
     padding-right: 20px;
-    padding-top: 22px;
+    padding-top: 15px;
     align-items: center;
-    height: 80px;
+    height: 77px;
     box-sizing: border-box;
   }
 
@@ -53,6 +71,13 @@
     width: 100%;
     background-color: rgba(0, 0, 0, 0.3);
     color: #ffffff;
+    padding: 21px 20px 22px 27px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo__item--main1 .photo__desc-wrapper {
+    padding: 26px 20px 22px 21px;
   }
 }
 
@@ -71,7 +96,7 @@
   text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
-    font-size: 21px;
+    font-size: 30px;
   }
 }
 
@@ -100,6 +125,10 @@
   margin-bottom: 25px;
   border-bottom: 1px solid #e5e5e5;
 
+  &:last-child {
+    margin-bottom: 0;
+  }
+
   @media (min-width: @tablet-width) {
     margin-bottom: 0;
     padding-bottom: 0;
@@ -109,6 +138,14 @@
 
     &--main1 {
       grid-column: 1 / -1;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 267px;
+
+    &--main1 {
+      height: 400px;
     }
   }
 }
@@ -147,6 +184,11 @@
   display: flex;
   gap: 14px;
   align-items: baseline;
+
+  @media (min-width: @tablet-width) {
+    gap: 10px;
+    align-items: center;
+  }
 }
 
 .photo__like-count {
@@ -156,6 +198,10 @@
 .photo__like-image {
   fill: #000000;
   opacity: 0.3;
+
+  @media (min-width: @tablet-width) {
+    margin-top: -5px;
+  }
 
   @media (min-width: @desktop-width) {
     fill: #ffffff;

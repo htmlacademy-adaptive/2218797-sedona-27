@@ -3,6 +3,11 @@
   justify-content: center;
   align-items: center;
   gap: 12px;
+  padding-top: 10px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+  }
 }
 
 .developer__text {
@@ -10,4 +15,31 @@
   font-weight: 400;
   line-height: 21px;
   text-transform: uppercase;
+  margin: 0;
+}
+
+.developer__link {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+  margin: 0;
+
+  &:hover {
+    color: #81b3d2;
+  }
+
+  &:disabled {
+    color: #b3b3b3;
+  }
+}
+
+.developer__image {
+  width: 27px;
+  height: 34px;
 }

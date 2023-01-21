@@ -47,7 +47,7 @@
               class="main-navigation__item main-navigation__item--form"
               disabled
             >
-              <a class="main-navigation__link" href="form.html">Форма отзывы</a>
+              <a class="main-navigation__link" href="form.html">Форма отзыва</a>
             </li>
             <li
               class="main-navigation__item main-navigation__item--html-academy"
@@ -83,8 +83,10 @@
           </div>
           <ul class="reasons__list">
             <li class="reasons__item reasons__item--town">
-              <div class="reasons__item-wrapper">
-                <h3 class="reasons__item-title">Настоящий городок</h3>
+              <div class="reasons__item-wrapper reasons__item-wrapper--town">
+                <h3 class="reasons__item-title">
+                  Настоящий<br />&nbsp;городок
+                </h3>
                 <p
                   class="reasons__item-description reasons__item-description--town"
                 >
@@ -154,7 +156,6 @@
                 >
                   <use href="img/icons/sprite.svg#housing-icon" />
                 </svg>
-                <!-- <div class="reasons__item-wrapper-with-icon"> -->
                 <h3
                   class="reasons__item-title reasons__item-title--infrastructure"
                 >
@@ -165,9 +166,10 @@
                 >
                   Рекомендуем пожить в настоящем мотеле, все как в кино!
                 </p>
-                <!-- </div> -->
               </div>
-              <div class="reasons__infrastructure">
+              <div
+                class="reasons__infrastructure reasons__infrastructure--food"
+              >
                 <svg
                   class="reasons__item-image"
                   focusable="false"
@@ -211,13 +213,15 @@
                 <p
                   class="reasons__item-description reasons__item-description--infrastructure reasons__item-description--souvenir"
                 >
-                  Не только китайского,<br />но и местного производства!
+                  Не только китайского,<br />&nbsp;но и местного производства!
                 </p>
               </div>
             </li>
             <li class="reasons__item reasons__item--bridge">
-              <div class="reasons__item-wrapper">
-                <h3 class="reasons__item-title">Там есть<br />мост дьявола</h3>
+              <div class="reasons__item-wrapper reasons__item-wrapper--bridge">
+                <h3 class="reasons__item-title">
+                  Там есть<br />&nbsp;мост дьявола
+                </h3>
                 <p
                   class="reasons__item-description reasons__item-description--bridge"
                 >
@@ -278,8 +282,10 @@
             </li>
 
             <li class="reasons__item reasons__item--square">
-              <div class="reasons__item-wrapper">
-                <h3 class="reasons__item-title">Небольшая<br />площадь</h3>
+              <div class="reasons__item-wrapper reasons__item-wrapper--square">
+                <h3 class="reasons__item-title">
+                  Небольшая<br />&nbsp;площадь
+                </h3>
                 <p
                   class="reasons__item-description reasons__item-description--square"
                 >
@@ -289,17 +295,19 @@
             </li>
             <li class="reasons__item reasons__item--road">
               <div class="reasons__item-wrapper reasons__item-wrapper--road">
-                <h3 class="reasons__item-title">Красивая<br />дорога</h3>
+                <h3 class="reasons__item-title">Красивая<br />&nbsp;дорога</h3>
                 <p
                   class="reasons__item-description reasons__item-description--road"
                 >
-                  Ехать в седону из лас-вегаса совсем не скучно!
+                  Ехать в седону из лас-вегаса совсем<br />&nbsp;не скучно!
                 </p>
               </div>
             </li>
             <li class="reasons__item reasons__item--tourists">
-              <div class="reasons__item-wrapper">
-                <h3 class="reasons__item-title">Мало<br />туристов</h3>
+              <div
+                class="reasons__item-wrapper reasons__item-wrapper--tourists"
+              >
+                <h3 class="reasons__item-title">Мало<br />&nbsp;туристов</h3>
                 <p
                   class="reasons__item-description reasons__item-description--tourists"
                 >
@@ -313,49 +321,28 @@
           <div class="find-hotel__wrapper">
             <h2 class="find-hotel__title">Заинтересовались?</h2>
             <p class="find-hotel__description">
-              Укажите предполагаемые даты поездки,<br />и мы покажем вам лучшие
-              предложения гостиниц в седоне
+              Укажите предполагаемые даты поездки,<br />&nbsp;и мы покажем вам
+              лучшие предложения гостиниц в седоне
             </p>
-            <button class="find-hotel__button button" type="button">
-              Найти гостиницу
-            </button>
+            <div class="find-hotel__button-wrapper">
+              <button class="find-hotel__button button" type="button">
+                Найти гостиницу
+              </button>
+            </div>
           </div>
         </section>
         <section class="map">
           <h2 class="visually-hidden">Карта аризоны</h2>
-          <picture>
-            <source
-              type="image/webp"
-              media="(min-width: 1200px)"
-              srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x"
-            />
-            <source
-              type="image/webp"
-              media="(min-width: 768px)"
-              srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x"
-            />
-            <source
-              type="image/webp"
-              srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x"
-            />
-
-            <source
-              media="(min-width: 1200px)"
-              srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x"
-            />
-            <source
-              media="(min-width: 768px)"
-              srcset="img/map-tablet.jpg 1x, img/map-tablet.jpg 2x"
-            />
-            <img
-              class="map__image"
-              src="img/map-mobile.jpg"
-              srcset="img/map-mobile@2x.jpg 2x"
-              width="320"
-              height="350"
-              alt="Карта Аризоны."
-            />
-          </picture>
+          <iframe
+            class="map__image"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.13567357986!2d-111.83024355471196!3d34.854443790410414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1674299722296!5m2!1sru!2sru"
+            width="320"
+            height="350"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Карта Седоны."
+          ></iframe>
         </section>
       </main>
       <footer class="main-footer">
@@ -380,6 +367,7 @@
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
+                  fill="currentColor"
                 >
                   <use href="img/icons/sprite.svg#vk-icon" />
                 </svg>
@@ -426,18 +414,25 @@
           </ul>
         </section>
         <section class="developer">
-          <h2 class="developer__text">Разработано</h2>
-          <svg
-            class="developer__image"
-            aria-hidden="true"
-            focusable="false"
-            aria-label="Логотип HTMLAcademy."
-            width="60"
-            height="60"
-            viewBox="0 0 60 60"
-          >
-            <use href="img/icons/sprite.svg#htmlacademy-icon" />
-          </svg>
+          <h2 class="visually-hidden">Разработчик</h2>
+          <a class="developer__link" href="#">
+            Разработано
+            <svg
+              class="developer__image"
+              aria-hidden="true"
+              focusable="false"
+              aria-label="Логотип HTMLAcademy."
+              width="27"
+              height="34"
+              viewBox="0 0 27 34"
+              fill="currentColor"
+            >
+              <use
+                fill="currentColor"
+                href="img/icons/sprite.svg#htmlacademy-icon"
+              />
+            </svg>
+          </a>
         </section>
       </footer>
     </div>

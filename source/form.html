@@ -76,21 +76,23 @@
           <div class="feedback__wrapper">
             <h2 class="feedback__title">Оставьте свой отзыв</h2>
             <p class="feedback__description">
-              Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о
-              посещенных вами достопримечательностях
+              Помогите нашим отелям стать лучше! оставьте отзыв о них,<br />&nbsp;
+              а также о посещенных вами достопримечательностях
             </p>
           </div>
 
           <form
             class="feedback__form"
             action="https://echo.htmlacademy.ru/"
-            method="get"
+            method="post"
           >
             <div class="feedback__form-person-inf-wrapper">
               <fieldset
                 class="feedback__form-fieldset feedback__form-fieldset--fio"
               >
-                <legend class="feedback__form-fieldset-legend">
+                <legend
+                  class="feedback__form-fieldset-legend feedback__form-fieldset-legend--fio"
+                >
                   Представьтесь:
                 </legend>
                 <label class="feedback__form-field">
@@ -130,13 +132,17 @@
               <fieldset
                 class="feedback__form-fieldset feedback__form-fieldset--contacts"
               >
-                <legend class="feedback__form-fieldset-legend">
+                <legend
+                  class="feedback__form-fieldset-legend feedback__form-fieldset-legend--contacts"
+                >
                   Контактная информация:
                 </legend>
                 <label class="feedback__form-field feedback__form-field--tel">
-                  <span class="feedback__form-label">Контактный телефон*</span>
+                  <span class="feedback__form-label feedback__form-label--tel"
+                    >Контактный телефон*</span
+                  >
                   <input
-                    class="feedback__form-control input"
+                    class="feedback__form-control input feedback__form-control--tel"
                     type="text"
                     name="user-tel"
                     id="user-tel"
@@ -145,7 +151,9 @@
                   />
                 </label>
                 <label class="feedback__form-field feedback__form-field--mail">
-                  <span class="feedback__form-label">Электронная почта*:</span>
+                  <span class="feedback__form-label feedback__form-label--mail"
+                    >Электронная почта*:</span
+                  >
                   <input
                     class="feedback__form-control input feedback__form-control--email"
                     type="text"
@@ -161,7 +169,9 @@
             <fieldset
               class="feedback__form-fieldset feedback__form-fieldset--impressions"
             >
-              <legend class="feedback__form-fieldset-legend">
+              <legend
+                class="feedback__form-fieldset-legend feedback__form-fieldset-legend--impressions"
+              >
                 Ваше общее впечатление:
               </legend>
               <ul class="feedback__form-list">
@@ -224,8 +234,7 @@
               class="feedback__form-fieldset feedback__form-fieldset--attractions"
             >
               <legend class="feedback__form-fieldset-legend">
-                посещенные<br />
-                достопримечательности:
+                посещенные<br />&nbsp; достопримечательности:
               </legend>
               <ul class="feedback__form-list feedback__form-list--checkbox">
                 <li class="feedback__form-item">
@@ -319,12 +328,12 @@
                 type="submit"
                 value="Отправить отзыв"
               />
-              <p class="feedback__form-required-text">* - обязательные поля</p>
+              <p class="feedback__form-required-text">* — обязательные поля</p>
             </div>
           </form>
         </section>
       </main>
-      <footer class="main-footer">
+      <footer class="main-footer main-footer--form">
         <section class="hash-tag">
           <h2 class="visually-hidden">Хештег</h2>
           <p class="hash-tag__title">#visitsedona</p>
@@ -392,27 +401,31 @@
           </ul>
         </section>
         <section class="developer">
-          <h2 class="developer__text">Разработано</h2>
-          <svg
-            class="developer__image"
-            aria-hidden="true"
-            focusable="false"
-            aria-label="Логотип HTMLAcademy."
-            width="60"
-            height="60"
-            viewBox="0 0 60 60"
-          >
-            <use href="img/icons/sprite.svg#htmlacademy-icon" />
-          </svg>
+          <h2 class="visually-hidden">Разработчик</h2>
+          <a class="developer__link" href="#">
+            Разработано
+            <svg
+              class="developer__image"
+              aria-hidden="true"
+              focusable="false"
+              aria-label="Логотип HTMLAcademy."
+              width="27"
+              height="34"
+              viewBox="0 0 27 34"
+              fill="currentColor"
+            >
+              <use
+                fill="currentColor"
+                href="img/icons/sprite.svg#htmlacademy-icon"
+              />
+            </svg>
+          </a>
         </section>
       </footer>
-
+      <!-- modal-container--closed - Скрывает модальное окно. modal-container--openned - Отображает модальное окно -->
       <div class="modal-container modal-container--closed">
         <div class="modal-body">
-          <h2 class="modal-body__title">
-            Что-то пошло<br />
-            не так!
-          </h2>
+          <h2 class="modal-body__title">Что-то пошло<br />&nbsp;не так!</h2>
           <p class="modal-body__description">
             Проверьте поля, выделенные красным, скорее всего вы забыли их
             заполнить
@@ -422,13 +435,13 @@
           </button>
         </div>
       </div>
-
+      <!-- modal-container--closed - Скрывает модальное окно. modal-container--openned - Отображает модальное окно -->
       <div class="modal-container modal-container--closed">
         <div class="modal-container__wrapper">
           <div class="modal-body modal-body--success">
             <h2 class="modal-body__title">Ваш отзыв отправлен!</h2>
             <p class="modal-body__description">
-              Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br />
+              Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br />&nbsp;
               В ближайшее время мы опубликуем его на сайте.
             </p>
           </div>
