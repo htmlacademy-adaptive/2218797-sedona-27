@@ -1,5 +1,11 @@
 .social {
   text-align: center;
+
+  @media (min-width: @desktop-width) {
+    &--index {
+      margin-left: 15px;
+    }
+  }
 }
 
 .social__list {
@@ -8,6 +14,26 @@
   display: flex;
   justify-content: center;
   gap: 6px;
+
+  &--form {
+    margin-top: 5px;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-left: -6px;
+
+    &--index {
+      margin-left: 9px;
+    }
+
+    &--form {
+      margin-left: -7px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: -7px;
+  }
 }
 
 .social__item {
