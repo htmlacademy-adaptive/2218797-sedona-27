@@ -5,13 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.min.css" />
+    <link
+      rel="preload"
+      href="fonts/ptsans.woff2"
+      type="font/woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/ptsansbold.woff2"
+      type="font/woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
     <link rel="icon" href="favicon.ico" />
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="img/favicons/apple.png" />
     <link rel="manifest" href="manifest.webmanifest" />
   </head>
   <body class="page__body">
-    <div class="page_container">
+    <div class="page__container">
       <header class="main-header">
         <a class="main-header__logo-link" href="/">
           <img
@@ -39,10 +53,7 @@
                 >Фото и видео</a
               >
             </li>
-            <li
-              class="main-navigation__item main-navigation__item--form"
-              disabled
-            >
+            <li class="main-navigation__item main-navigation__item--form">
               <a
                 class="main-navigation__link main-navigation__link--current"
                 href="form.html"
@@ -96,7 +107,7 @@
                   Представьтесь:
                 </legend>
                 <label class="feedback__form-field">
-                  <span class="feedback__form-label">Имя*</span>
+                  <span class="feedback__form-label">Имя*:</span>
                   <input
                     class="feedback__form-control input"
                     type="text"
@@ -107,7 +118,7 @@
                   />
                 </label>
                 <label class="feedback__form-field">
-                  <span class="feedback__form-label">Фамилия*</span>
+                  <span class="feedback__form-label">Фамилия*:</span>
                   <input
                     class="feedback__form-control input"
                     type="text"
@@ -118,7 +129,7 @@
                   />
                 </label>
                 <label class="feedback__form-field">
-                  <span class="feedback__form-label">Отчество</span>
+                  <span class="feedback__form-label">Отчество:</span>
                   <input
                     class="feedback__form-control input"
                     type="text"
@@ -174,7 +185,7 @@
               >
                 Ваше общее впечатление:
               </legend>
-              <ul class="feedback__form-list">
+              <ul class="feedback__form-list feedback__form-list--radio">
                 <li class="feedback__form-item">
                   <label
                     class="feedback__form-field feedback__form-field--radio"
@@ -205,12 +216,13 @@
                       value="negative"
                     />
                     <span class="feedback__form-control-radio-mark"></span>
-                    <span class="feedback__form-control-radio-label"
+                    <span
+                      class="feedback__form-control-radio-label feedback__form-control-radio-label--centered"
                       >Скорее отрицательное</span
                     >
                   </label>
                 </li>
-                <li class="feedback__form-item">
+                <li class="feedback__form-item feedback__form-item--difficult">
                   <label
                     class="feedback__form-field feedback__form-field--radio"
                   >
@@ -222,7 +234,8 @@
                       value="difficult-to-answer"
                     />
                     <span class="feedback__form-control-radio-mark"></span>
-                    <span class="feedback__form-control-radio-label"
+                    <span
+                      class="feedback__form-control-radio-label feedback__form-control-radio-label--last"
                       >Затрудняюсь ответить</span
                     >
                   </label>
@@ -233,7 +246,9 @@
             <fieldset
               class="feedback__form-fieldset feedback__form-fieldset--attractions"
             >
-              <legend class="feedback__form-fieldset-legend">
+              <legend
+                class="feedback__form-fieldset-legend feedback__form-fieldset-legend--attractions"
+              >
                 посещенные<br />&nbsp; достопримечательности:
               </legend>
               <ul class="feedback__form-list feedback__form-list--checkbox">
@@ -313,14 +328,12 @@
               <legend class="feedback__form-fieldset-legend">
                 Опишите свои эмоции:
               </legend>
-              <label class="feedback__form-field">
-                <textarea
-                  class="feedback__form-control input feedback__form-control--textarea"
-                  name="user-emotions"
-                  id="user-emotions"
-                  placeholder="Опишите подробно все свои восторги "
-                ></textarea>
-              </label>
+              <textarea
+                class="feedback__form-control input feedback__form-control--textarea"
+                name="user-emotions"
+                id="user-emotions"
+                placeholder="Опишите подробно все свои восторги "
+              ></textarea>
             </fieldset>
             <div class="feedback__form-submit-wrapper">
               <input
@@ -340,7 +353,7 @@
         </section>
         <section class="social">
           <h2 class="visually-hidden">Социальные сети</h2>
-          <ul class="social__list">
+          <ul class="social__list social__list--form">
             <li class="social__item">
               <span class="visually-hidden">Вконтакте.</span>
               <a
@@ -400,7 +413,7 @@
             </li>
           </ul>
         </section>
-        <section class="developer">
+        <section class="developer developer--form">
           <h2 class="visually-hidden">Разработчик</h2>
           <a class="developer__link" href="#">
             Разработано

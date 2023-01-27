@@ -154,7 +154,7 @@ export const build = gulp.series(
   copy,
   optimizeImages,
   gulp.parallel(styles, html, scripts, optimazeSVG, sprite, createWebp),
-  gulp.series(server, watcher)
+  gulp.series(watcher)
 );
 
 export default gulp.series(

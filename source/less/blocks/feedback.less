@@ -23,7 +23,7 @@
 .feedback__wrapper {
   display: grid;
   gap: 24px;
-  padding: 35px 0 28px 0;
+  padding: 37px 0 28px 0;
   text-align: center;
   margin: 0 auto;
   order: 1;
@@ -35,6 +35,7 @@
     padding-top: 63px;
     border-bottom: none;
     margin-bottom: 78px;
+    gap: 23px;
   }
 
   @media (min-width: @desktop-width) {
@@ -60,6 +61,7 @@
   margin: 0;
   line-height: 21px;
   text-transform: uppercase;
+  color: #333333;
 
   @media (max-width: @mobile-width-only) {
     br {
@@ -69,6 +71,7 @@
 
   @media (min-width: @tablet-width) {
     align-self: center;
+    line-height: 22px;
   }
 }
 
@@ -92,28 +95,28 @@
   display: flex;
   flex-direction: column;
   padding-top: 20px;
-  gap: 16px;
+  gap: 21px;
   padding-left: 20px;
   padding-right: 20px;
 
   &--fio {
-    padding-bottom: 39px;
+    padding-bottom: 44px;
     border-bottom: 1px solid #e5e5e5;
-    margin-bottom: 22px;
-    padding-top: 21px;
+    margin-bottom: 25px;
+    padding-top: 19px;
   }
 
   &--contacts {
-    padding-bottom: 34px;
+    padding-bottom: 39px;
     border-bottom: 1px solid #e5e5e5;
-    margin-bottom: 22px;
-    padding-top: 21px;
+    margin-bottom: 25px;
+    padding-top: 19px;
   }
 
   &--impressions {
-    padding-bottom: 24px;
+    padding-bottom: 21px;
     border-bottom: 1px solid #e5e5e5;
-    margin-bottom: 21px;
+    margin-bottom: 25px;
   }
 
   &--attractions {
@@ -124,8 +127,8 @@
   }
 
   &--emotions {
-    padding-bottom: 47px;
-    padding-top: 22px;
+    padding-bottom: 60px;
+    padding-top: 25px;
   }
 
   @media (min-width: @tablet-width) {
@@ -175,6 +178,7 @@
       padding-right: 84px;
       position: relative;
       padding-top: 30px;
+      margin-bottom: 21px;
 
       &::before {
         content: "";
@@ -197,10 +201,7 @@
 
     &--emotions {
       position: relative;
-      padding-left: 0;
-      padding-right: 0;
-      padding-bottom: 50px;
-      padding-top: 25px;
+      padding: 32px 0 53px;
 
       &::before {
         content: "";
@@ -225,7 +226,7 @@
   @media (min-width: @desktop-width) {
     &--fio {
       padding-right: 56px;
-      margin-bottom: 30px;
+      margin-bottom: 32px;
     }
 
     &--impressions {
@@ -233,7 +234,7 @@
       padding-right: 53px;
       padding-top: 45px;
 
-      margin-bottom: 47px;
+      margin-bottom: 50px;
 
       &::before {
         width: 277px;
@@ -247,8 +248,8 @@
     &--attractions {
       padding-left: 44px;
       padding-right: 44px;
-      padding-top: 61px;
-      margin-bottom: 70px;
+      padding-top: 63px;
+      margin-bottom: 67px;
 
       &::before {
         width: 277px;
@@ -260,6 +261,8 @@
     }
 
     &--emotions {
+      padding-bottom: 52px;
+
       &::before {
         width: 277px;
       }
@@ -278,6 +281,15 @@
   text-transform: uppercase;
   text-align: center;
   width: 100%;
+  margin-left: -2px;
+
+  &--impressions {
+    margin-left: -1px;
+  }
+
+  &--attractions {
+    margin-left: -6px;
+  }
 
   @media (min-width: @tablet-width) {
     font-size: 21px;
@@ -287,7 +299,7 @@
     }
 
     &--contacts {
-      margin-left: -10px;
+      margin-left: -12px;
     }
 
     &--impressions {
@@ -318,10 +330,10 @@
   &--tel::before {
     content: "";
     position: absolute;
-    width: 57px;
-    height: 59px;
-    right: 0;
-    bottom: 0;
+    width: 58px;
+    height: 58px;
+    right: -2px;
+    bottom: -4px;
     background-color: #e6e6e6;
     background-image: url("../../img/icons/sprite.svg#phone-icon");
     background-repeat: no-repeat;
@@ -332,10 +344,10 @@
   &--mail::before {
     content: "";
     position: absolute;
-    width: 57px;
-    height: 59px;
-    right: 0;
-    bottom: 0;
+    width: 58px;
+    height: 58px;
+    right: -2px;
+    bottom: -4px;
     background-color: #e6e6e6;
     background-image: url("../../img/icons/sprite.svg#mail-icon");
     background-repeat: no-repeat;
@@ -370,47 +382,75 @@
   margin: 0 auto;
 
   &--textarea {
-    height: 160px;
+    height: 142px;
     padding-right: 10px;
+    padding-top: 11px;
+    padding-left: 9px;
+    margin-top: 1px;
+    width: 98%;
   }
 
   @media (min-width: @tablet-width) {
-    width: 280px;
+    width: 275px;
     margin: 0;
 
     &--textarea {
-      width: 648px;
+      width: 644px;
+      height: 150px;
+      padding-left: 13px;
     }
   }
 
   @media (min-width: @desktop-width) {
-    width: 430px;
+    width: 425px;
 
     &--tel,
     &--email {
-      width: 402px;
-      padding-left: 19px;
+      width: 397px;
+      padding-left: 13px;
     }
 
     &--textarea {
-      width: 768px;
+      width: 763px;
       margin: 0 auto;
+      padding-left: 14px;
     }
   }
 }
 
 .feedback__form-control-radio-mark {
   position: absolute;
-  top: 2px;
+  top: 1px;
   left: 0;
   background-color: #f2f2f2;
-  width: 46px;
-  height: 46px;
+  outline: 4px solid #f2f2f2;
+  width: 39px;
+  height: 39px;
   border-radius: 50%;
+
+  @media (min-width: @desktop-width) {
+    top: 1px;
+    left: -4px;
+  }
 }
 
 .feedback__form-control-radio-label {
-  padding-left: 60px;
+  padding-left: 59px;
+
+  @media (min-width: @desktop-width) {
+    &--centered {
+      padding-left: 53px;
+    }
+
+    &--last {
+      margin-right: 1px;
+    }
+  }
+}
+
+.feedback__form-radio:focus + .feedback__form-control-radio-mark {
+  outline: 4px solid #e5e5e5;
+  background-color: #ffffff;
 }
 
 .feedback__form-radio:checked + .feedback__form-control-radio-mark::before {
@@ -420,12 +460,14 @@
   height: 15px;
   background-color: #333333;
   border-radius: 50%;
-  top: 14px;
-  left: 14px;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
 }
 
 .feedback__form-radio:hover + .feedback__form-control-radio-mark {
   background-color: #e5e5e5;
+  outline: 4px solid #e5e5e5;
 }
 
 .feedback__form-control-radio-mark:active {
@@ -437,15 +479,26 @@
 .feedback__form-control-checkbox-mark {
   position: absolute;
   top: 2px;
-  left: 0;
+  left: -1px;
   background-color: #f2f2f2;
-  width: 46px;
-  height: 46px;
+  outline: 4px solid #f2f2f2;
+  width: 39px;
+  height: 39px;
   border-radius: 4px;
+
+  @media (min-width: @desktop-width) {
+    top: 0;
+    left: -1px;
+  }
 }
 
 .feedback__form-control-checkbox-label {
   padding-left: 60px;
+}
+
+.feedback__form-checkbox:focus + .feedback__form-control-checkbox-mark {
+  outline: 4px solid #e5e5e5;
+  background-color: #ffffff;
 }
 
 /* stylelint-disable */
@@ -453,18 +506,22 @@
   + .feedback__form-control-checkbox-mark::before {
   content: "";
   position: absolute;
-  width: 22px;
-  height: 16px;
+
+  width: 25px;
+  height: 15px;
+
   background-image: url("../../img/icons/sprite.svg#tick-icon");
   background-repeat: no-repeat;
   background-size: 22px 16px;
-  top: 15px;
-  left: 13px;
+  left: 60%;
+  top: 52%;
+  transform: translateX(-51%) translateY(-50%);
 }
 /* stylelint-enable */
 
 .feedback__form-checkbox:hover + .feedback__form-control-checkbox-mark {
   background-color: #e5e5e5;
+  outline: 4px solid #e5e5e5;
 }
 
 .feedback__form-control-checkbox-mark:active {
@@ -478,16 +535,18 @@
   line-height: 21px;
   text-transform: uppercase;
   padding-left: 14px;
+  color: #333333;
+  margin-bottom: 3px;
 
   &--tel,
   &--mail {
-    padding-left: 15px;
+    padding-left: 13px;
   }
 
   @media (min-width: @tablet-width) {
     &--tel,
     &--mail {
-      padding-left: 18px;
+      padding-left: 12px;
     }
   }
 }
@@ -510,6 +569,11 @@
   @media (min-width: @desktop-width) {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+
+    &--radio {
+      margin-left: 3px;
+    }
 
     &--checkbox {
       grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -522,18 +586,25 @@
   font-size: 18px;
   line-height: 26px;
   height: 46px;
+
+  @media (min-width: @desktop-width) {
+    &--difficult {
+      margin-right: -4px;
+    }
+  }
 }
 
 .feedback__form-required-text {
   padding: 0;
   margin: 0;
-  margin-top: 5px;
+  margin-top: 4px;
   text-transform: uppercase;
   color: rgba(51, 51, 51, 0.6);
   font-size: 12px;
 
   @media (min-width: @tablet-width) {
     font-size: 14px;
+    color: #333333;
   }
 }
 

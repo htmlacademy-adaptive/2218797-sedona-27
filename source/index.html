@@ -5,13 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="./css/style.min.css" />
+    <link
+      rel="preload"
+      href="fonts/ptsans.woff2"
+      type="font/woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/ptsansbold.woff2"
+      type="font/woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
     <link rel="icon" href="favicon.ico" />
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="img/favicons/apple.png" />
     <link rel="manifest" href="manifest.webmanifest" />
   </head>
   <body class="page__body">
-    <div class="page_container">
+    <div class="page__container">
       <header class="main-header">
         <a class="main-header__logo-link" href="/">
           <img
@@ -43,10 +57,7 @@
                 >Фото и видео</a
               >
             </li>
-            <li
-              class="main-navigation__item main-navigation__item--form"
-              disabled
-            >
+            <li class="main-navigation__item main-navigation__item--form">
               <a class="main-navigation__link" href="form.html">Форма отзыва</a>
             </li>
             <li
@@ -145,19 +156,21 @@
               </div>
             </li>
             <li class="reasons__item reasons__item--infrastructure">
-              <div class="reasons__infrastructure">
+              <div
+                class="reasons__infrastructure reasons__infrastructure--housing"
+              >
                 <svg
-                  class="reasons__item-image"
+                  class="reasons__item-image reasons__item-image--housing"
                   focusable="false"
                   aria-label="Домик."
-                  width="40"
-                  height="40"
-                  viewBox="0 0 40 40"
+                  width="39"
+                  height="37"
+                  viewBox="0 0 39 37"
                 >
                   <use href="img/icons/sprite.svg#housing-icon" />
                 </svg>
                 <h3
-                  class="reasons__item-title reasons__item-title--infrastructure"
+                  class="reasons__item-title reasons__item-title--infrastructure reasons__item-title--housing"
                 >
                   Жильё
                 </h3>
@@ -171,42 +184,43 @@
                 class="reasons__infrastructure reasons__infrastructure--food"
               >
                 <svg
-                  class="reasons__item-image"
+                  class="reasons__item-image reasons__item-image--food"
                   focusable="false"
                   aria-label="Гамбургер."
                   width="40"
-                  height="36"
-                  viewBox="0 0 40 36"
+                  height="34"
+                  viewBox="0 0 40 34"
                 >
                   <use href="img/icons/sprite.svg#food-icon" />
                 </svg>
 
                 <h3
-                  class="reasons__item-title reasons__item-title--infrastructure"
+                  class="reasons__item-title reasons__item-title--infrastructure reasons__item-title--food"
                 >
                   Еда
                 </h3>
                 <p
                   class="reasons__item-description reasons__item-description--infrastructure reasons__item-description--food"
                 >
-                  Всегда заказывайте фирменный бургер, Вы не разочаруетесь!
+                  Всегда заказывайте фирменный бургер,<br />&nbsp;Вы не
+                  разочаруетесь!
                 </p>
               </div>
               <div
                 class="reasons__infrastructure reasons__infrastructure--souvenir"
               >
                 <svg
-                  class="reasons__item-image"
+                  class="reasons__item-image reasons__item-image--souvenir"
                   focusable="false"
                   aria-label="Подарок."
-                  width="40"
-                  height="40"
-                  viewBox="0 0 40 40"
+                  width="32"
+                  height="38"
+                  viewBox="0 0 32 38"
                 >
                   <use href="img/icons/sprite.svg#souvenir-icon" />
                 </svg>
                 <h3
-                  class="reasons__item-title reasons__item-title--infrastructure"
+                  class="reasons__item-title reasons__item-title--infrastructure reasons__item-title--souvenir"
                 >
                   Сувениры
                 </h3>
@@ -219,7 +233,7 @@
             </li>
             <li class="reasons__item reasons__item--bridge">
               <div class="reasons__item-wrapper reasons__item-wrapper--bridge">
-                <h3 class="reasons__item-title">
+                <h3 class="reasons__item-title reasons__item-title--bridge">
                   Там есть<br />&nbsp;мост дьявола
                 </h3>
                 <p
@@ -281,9 +295,9 @@
               </div>
             </li>
 
-            <li class="reasons__item reasons__item--square">
-              <div class="reasons__item-wrapper reasons__item-wrapper--square">
-                <h3 class="reasons__item-title">
+            <li class="reasons__item reasons__item--features">
+              <div class="reasons__feature reasons__feature--square">
+                <h3 class="reasons__item-title reasons__item-title--square">
                   Небольшая<br />&nbsp;площадь
                 </h3>
                 <p
@@ -292,9 +306,7 @@
                   Все интересные места находятся очень близко
                 </p>
               </div>
-            </li>
-            <li class="reasons__item reasons__item--road">
-              <div class="reasons__item-wrapper reasons__item-wrapper--road">
+              <div class="reasons__feature reasons__feature--road">
                 <h3 class="reasons__item-title">Красивая<br />&nbsp;дорога</h3>
                 <p
                   class="reasons__item-description reasons__item-description--road"
@@ -302,12 +314,10 @@
                   Ехать в седону из лас-вегаса совсем<br />&nbsp;не скучно!
                 </p>
               </div>
-            </li>
-            <li class="reasons__item reasons__item--tourists">
-              <div
-                class="reasons__item-wrapper reasons__item-wrapper--tourists"
-              >
-                <h3 class="reasons__item-title">Мало<br />&nbsp;туристов</h3>
+              <div class="reasons__feature reasons__feature--tourists">
+                <h3 class="reasons__item-title reasons__item-title--tourists">
+                  Мало<br />&nbsp;туристов
+                </h3>
                 <p
                   class="reasons__item-description reasons__item-description--tourists"
                 >
@@ -345,14 +355,14 @@
           ></iframe>
         </section>
       </main>
-      <footer class="main-footer">
+      <footer class="main-footer main-footer--index">
         <section class="hash-tag">
           <h2 class="visually-hidden">Хештег</h2>
           <p class="hash-tag__title">#visitsedona</p>
         </section>
-        <section class="social">
+        <section class="social social--index">
           <h2 class="visually-hidden">Социальные сети</h2>
-          <ul class="social__list">
+          <ul class="social__list social__list--index">
             <li class="social__item">
               <span class="visually-hidden">Вконтакте.</span>
               <a
